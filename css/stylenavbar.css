@@ -1,0 +1,329 @@
+/*Custom font*/
+@font-face {
+  font-family: Lato;
+  src: url('../font/lato-v17-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../font/lato-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/lato-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/lato-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../font/lato-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../font/lato-v17-latin-regular.svg') format('svg'); /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+    background-color: #869960;
+  }
+  
+  body {
+    font-family: Lato, Tahoma, sans-serif;
+    font-size: 90%;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .image-banner img {
+      display: block;
+  }
+
+  .image-banner {
+      position: relative;
+      /* z-index means the stack order level*/
+      z-index: 3;
+  }
+
+  .banner-description {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      color: #FFF;
+      background-color: rgba(0, 0, 0, .45);
+      padding: 10px 20px;
+  }
+  
+  .container {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../img/color-tile.png) left top repeat-x, #FFF url(../img/color-tile.png) left bottom repeat-x;
+    padding-top: 15px;
+    padding-left: 40px;
+    box-sizing: border-box;
+  }
+  
+  header {
+    padding-top: 20px;
+    color: #617140;
+    background-image: url(../img/flower.jpg);
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 165%;
+  }
+  
+  header p {
+    margin: 0;
+  }
+  
+  .content-area {
+    border-top: 3px solid #e5e9dc;
+    border-bottom: 3px solid #e5e9dc;
+  }
+  
+  .main-area {
+    width: 66%;
+    float: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+
+  .main-area h1 {
+    font-size: 200%;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    text-transform: lowercase;
+    text-shadow: 2px 10px 10px rgba(0, 0, 0, .4);
+    /*line below text*/
+    text-decoration: underline;
+  }
+
+  .main-area p {
+    text-align: justify;
+    text-indent: 10px;
+    font-size: 110%;
+    line-height: 1.5;
+  }
+  
+  .sidebar {
+    position: relative;
+    width: 34%;
+    float: left;
+    /*If user use old browser then show the background color*/
+    background-color: #e5e9dc;
+    background-image: linear-gradient(to top right, red, blue);
+    padding: 20px 40px;
+    box-sizing: border-box;
+    font-size: 85%;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 85%;
+    color: #999;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  
+  .fix {
+    clear: both;
+  }
+  
+  .group:before,
+  .group:after {
+    content: "";
+    display: table;
+  }
+  
+  .group:after {
+    clear: both;
+  }
+  
+  .group {
+    zoom: 1;
+  }
+
+  .site-nav {
+      margin-top: 20px;
+  }
+
+  .site-nav ul {
+      margin: 0;
+      padding: 0;
+  }
+
+  .site-nav li {
+      list-style: none;
+      float: left;
+      margin-right: 10px;
+  }
+
+  .site-nav a {
+      display: block;
+      color: #617140;
+      text-decoration: none;
+      border: 3px solid #e5e9dc;
+      padding: 15px 20px;
+      background-color: white;
+      border-bottom: none;
+  }
+
+  .site-nav a:hover {
+      background-color: #e5e9dc;
+  }
+
+  table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .item-name {
+    width: 60%;
+  }
+
+  .quantity, .price {
+    width: 20%;
+  }
+
+  table th {
+    background-color: royalblue;
+    color: #FFF;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, .4);
+  }
+
+  table th, table td {
+    border: 1px solid #869960;
+    padding: 10px 10px;
+  }
+
+  /* Choose all rows with odd number */
+  table tbody tr:nth-child(odd) td {
+    background-color: red;
+  }
+
+  /*Choose any child tag (column) which is inside the <tr> in the position 2,3*/
+table.grocery-list tr :nth-child(2), table.grocery-list tr :nth-child(3) {
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+  background-color: #ECECEC;
+  padding: 30px 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input, select {
+  font-family: Lato ,Tahoma, sans-serif;
+  font-size: 100%;
+}
+
+.hidden-label {
+  position: absolute;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/*Select input based on type*/
+input[type = "email"], input[type = "password"], select
+ {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 10px 10px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+/* input when is being used will draw a border around to let user know which are currently using in */
+input[type = "email"]:focus, input[type = "password"]:focus {
+  border: 3px solid blue;
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .45);
+}
+
+input[type = "submit"] {
+  width: 100%;
+  background-color: skyblue;
+  color: #FFF;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #869960;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+input[type = "submit"]:focus, input[type = "submit"]:hover {
+  border: 2px solid red;
+  background-color: salmon;
+}
+
+.checkbox-text {
+  font-size: 90%;
+}
+
+.bird {
+  width: 100%;
+  padding: 100px 0;
+  text-align: center;
+  margin-top: 10px;
+  background-color: #ECECEC;
+  box-sizing: border-box;
+  background-image: url(../img/7A715AD8-449D-4B5A-ABA2C5D92D9B5A21_source.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bird p {
+  color: white;
+  background-color: rgba(0, 0, 0, .6);
+  display: inline-block;
+  padding: 10px;
+  margin: 0;
+}
+
+.nav-bar ul {
+  margin: 0;
+  padding: 0;
+}
+
+/*Set automatically icon for each hyperlink*/
+.nav-bar a {
+  text-decoration: none;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/sprites.png);
+  text-indent: -999px;
+  background-repeat: no-repeat;
+}
+
+.nav-bar li {
+  float: left;
+  list-style: none;
+  margin-right: 20px;
+}
+
+.ui-profile a {
+  background-position: 0 -50px;
+}
+
+.ui-settings a {
+  background-position: 0 -100px;
+}
+
+.ui-home a:hover {
+  background-position: -50px 0;
+}
+
+.ui-profile a:hover {
+  background-position: -50px -50px;
+}
+
+.ui-settings a:hover {
+  background-position: -50px -100px;
+}

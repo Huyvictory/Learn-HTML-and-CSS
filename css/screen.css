@@ -1,0 +1,24 @@
+/*This is a typed style*/
+h1 {
+    color:red;
+    text-align: center;
+}
+
+/* This is descendant style*/
+header p {
+    color:rgb(28, 136, 51);
+}
+
+header p span {
+    color: red;
+}
+
+/* This is class style */
+.highlightbackground {
+    background-color: yellowgreen;
+}
+
+/* Combination between descendant style and class style */
+footer .highlightbackground {
+    color: pink;
+}

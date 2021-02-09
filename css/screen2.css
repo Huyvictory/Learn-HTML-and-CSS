@@ -1,0 +1,38 @@
+/* Browser by default will style the header as big and bold but we could apply cascade and style header in a different way*/
+h1 {
+    font-size: 300%;
+    text-align: center;
+    color: royalblue;
+}
+
+/* Specification list from low to high*/
+/* p has the lowest specification*/
+p {
+    color:sienna;
+}
+
+footer p {
+    color:slateblue;
+}
+
+body article p {
+    color: springgreen;
+}
+
+.backgroundcolor {
+    background-color: black;
+    color: red;
+}
+
+footer .backgroundcolor {
+    background-color: sandybrown;
+}
+
+/* Which style come out later then will get used for styling*/
+article .changedcolortext {
+    color: yellow;
+}
+
+article .changedcolortext {
+    color: blue;
+}

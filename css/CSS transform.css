@@ -1,0 +1,43 @@
+html {
+    background-color: #fff;
+  }
+  
+  body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    padding: 5px 17%;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  footer {
+      text-align: center;
+  }
+  
+  .example {
+    width: 240px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .example-a {
+      background-color: red;
+      transform: rotate(90deg) scale(.5);
+  }
+
+  .example-b {
+      background-color: blue;
+      transform: skew(10deg, 15deg);
+      transform-origin: 0 0;
+  }
+
+  .example-c {
+      background-color: coral;
+      transform-origin: 100% 0;
+      transform: translate(0px, 50px);
+  }
